@@ -62,15 +62,13 @@ end
 
 def get_average_age_for_season(data, season)
    # code here
-   data.each do |season, array|
-     
-    array.each do |people|
-      #binding.pry
-      people.each do |key,value|
-        if value == hometown
-          return people["occupation"]
-        end
+  data[season].each do |person|
+
+       person.each do |name,age|
+         #binding.pry
+        if status == "Winner"
+           
+        end 
       end
     end
-  end
 end
