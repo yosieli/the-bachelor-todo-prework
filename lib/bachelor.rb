@@ -1,4 +1,4 @@
-#require "pry"
+require "pry"
 def get_first_name_of_season_winner(data, season)
  data[season].each do |person|
 
@@ -65,6 +65,7 @@ def get_average_age_for_season(data, season)
   age = 0
 count = 0
   data[season].each do |hash|
+    binding.pry
     hash.each do |key,value|
       if key == "age"
         count += 1
