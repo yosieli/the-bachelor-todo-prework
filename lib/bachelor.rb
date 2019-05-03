@@ -53,7 +53,7 @@ def get_occupation(data, hometown)
       #binding.pry
       people.each do |key,value|
         if value == hometown
-          return people["name"]
+          return people["occupation"]
         end
       end
     end
